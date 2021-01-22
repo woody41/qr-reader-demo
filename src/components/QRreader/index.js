@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import QrReader from 'react-qr-scanner'
- 
+//import "@material/card";
+//import card.core-styles;
+
 class QRreader extends Component {
   constructor(props){
     super(props)
@@ -8,23 +10,26 @@ class QRreader extends Component {
       delay: 100,
       result: 'No result',
     }
- 
-    this.handleScan = this.handleScan.bind(this)
+    this.handleScan = this.handleScan.bind(this);
   }
+  handleError(err){
+    console.error(err)
+  }
+
+
   handleScan(data){
     this.setState({
       result: data,
     })
-  }
-  handleError(err){
-    console.error(err)
+    this.props.handleReader(this.state.result);
+    console.log(this.props.runComponent);
   }
   render(){
     const previewStyle = {
       height: 240,
       width: 320,
     }
- 
+
     return(
       <div>
         <QrReader
@@ -33,10 +38,9 @@ class QRreader extends Component {
           onError={this.handleError}
           onScan={this.handleScan}
           />
-        <p>{this.state.result}</p>
       </div>
     )
   }
-} 
+}
 
 export default QRreader;

@@ -1,18 +1,36 @@
-import logo from './logo.svg';
 import './App.css';
 import QRreader from './components/QRreader';
+import React from 'react';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-        <QRreader></QRreader>
-        </p>
-      </header>
-    </div>
-  );
-}
+export default class App extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      result: '',
+      runScanner: true
+    };
 
-export default App;
+  }
+
+  handleReader = e => {
+
+    if(this.state.runScanner) { //check if we should to scan
+      if(e != null && e.length > 0) { //test of incoming data for length
+        this.setState({result: e}); //loaded readed QR
+        this.setState({runScanner: false}); //disable reading QR
+        //value just loaded
+      } else {
+        //omitting, value already loaded
+      }
+    }
+  }
+
+  render() {
+    return (
+      <div>
+        <QRreader handleReader={this.handleReader} result={this.state.result} runComponent={this.state.runScanner}></QRreader>
+        Value: { this.state.result }
+      </div>
+    );
+  }
+};
