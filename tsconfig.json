@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": ".",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "importHelpers": true,
+    "skipLibCheck": true,
+    "jsx": "react-jsx",
+    "lib": [
+      "DOM",
+      "ES2019"
+    ],
+    "module": "esnext",
+    "moduleResolution": "node",
+    "noUnusedLocals": true,
+    "noImplicitAny": true,
+    "pretty": true,
+    "removeComments": true,
+    "resolveJsonModule": true,
+    "sourceMap": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "target": "es6",
+    "strict": true,
+    "noFallthroughCasesInSwitch": true,
+    "isolatedModules": true,
+    "noEmit": true
+  },
+  "include": [
+    "src"
+  ]
+}

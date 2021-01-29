@@ -8,6 +8,7 @@ import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
+import { useRouter } from '@daimler/ftk-core'
 
 interface TabPanelProps {
   children?: React.ReactNode;
@@ -54,6 +55,7 @@ const useStyles = makeStyles((theme: Theme) => ({
 }));
 
 export default function VerticalTabs() {
+  const router = useRouter()
   const classes = useStyles();
   const [value, setValue] = React.useState(0);
 
@@ -80,13 +82,20 @@ export default function VerticalTabs() {
         <Tab label="Item Seven" {...a11yProps(6)} />
       </Tabs>
       <TabPanel value={value} index={0}>
-        Home
+        <Typography variant="h4" component="h4">Home</Typography>
+        <Button
+          variant="contained"
+          color="primary"
+          onClick={() => router.navigate(router.linkTo('posts'))}
+        >
+          Posts
+        </Button>
       </TabPanel>
       <TabPanel value={value} index={1}>
-      <GridPage></GridPage>
+        <GridPage />
       </TabPanel>
       <TabPanel value={value} index={2}>
-        <QRreaderPage></QRreaderPage>
+        <QRreaderPage />
       </TabPanel>
       <TabPanel value={value} index={3}>
         Item Four
