@@ -1,10 +1,10 @@
-import "./Home.scss";
+import "./Footer.scss";
 import React from "react";
 
 function template() {
   return (
-    <div className="home">
-      <h1>Home</h1>
+    <div className="footer">
+      <h1>Footer</h1>
     </div>
   );
 };

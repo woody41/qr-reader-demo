@@ -1,10 +1,10 @@
-import "./Home.scss";
+import "./Header.scss";
 import React from "react";
 
 function template() {
   return (
-    <div className="home">
-      <h1>Home</h1>
+    <div className="header">
+      <h1>Header</h1>
     </div>
   );
 };

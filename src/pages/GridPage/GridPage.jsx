@@ -1,10 +1,10 @@
-import "./Home.scss";
+import "./GridPage.scss";
 import React from "react";
 
 function template() {
   return (
-    <div className="home">
-      <h1>Home</h1>
+    <div className="gridpage">
+      <h1>GridPage</h1>
     </div>
   );
 };

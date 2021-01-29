@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import QrReader from 'react-qr-scanner'
 //import "@material/card";
 //import card.core-styles;
+import { Button, Container } from '@material-ui/core';
 
 class QRreader extends Component {
   constructor(props){
@@ -31,14 +32,15 @@ class QRreader extends Component {
     }
 
     return(
-      <div>
-        <QrReader
-          delay={this.state.delay}
-          style={previewStyle}
-          onError={this.handleError}
-          onScan={this.handleScan}
-          />
-      </div>
+        <div>
+            <QrReader
+            delay={this.state.delay}
+            style={previewStyle}
+            onError={this.handleError}
+            onScan={this.handleScan}
+            />
+
+        </div>
     )
   }
 }
