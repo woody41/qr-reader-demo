@@ -9,6 +9,7 @@ import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 import { useRouter } from '@daimler/ftk-core'
+import {useTranslation} from 'react-i18next'
 
 interface TabPanelProps {
   children?: React.ReactNode;
@@ -58,6 +59,7 @@ export default function VerticalTabs() {
   const router = useRouter()
   const classes = useStyles();
   const [value, setValue] = React.useState(0);
+  const { t } = useTranslation();
 
   const handleChange = (event: React.ChangeEvent<{}>, newValue: number) => {
     setValue(newValue);
@@ -88,7 +90,7 @@ export default function VerticalTabs() {
           color="primary"
           onClick={() => router.navigate(router.linkTo('posts'))}
         >
-          Posts
+          {t('FetchPosts')}
         </Button>
       </TabPanel>
       <TabPanel value={value} index={1}>
