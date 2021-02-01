@@ -8,6 +8,7 @@ import Tabs from '@material-ui/core/Tabs';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 import { useRouter } from '@daimler/ftk-core'
+import {useTranslation} from 'react-i18next'
 
 
 import MenuList from '@material-ui/core/MenuList';

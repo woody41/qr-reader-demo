@@ -1,7 +1,6 @@
-import React from 'react'
+import React, { Suspense } from 'react'
 import { Provider } from 'react-redux'
-import { App, IDiContainer, IRouteConfig, ISwidget, Route, serviceIds, TranslationProvider } from '@daimler/ftk-core'
-import TranslationsI18n from './globals/i18n/Translations'
+import { App, IDiContainer, IRouteConfig, ISwidget, Route, serviceIds } from '@daimler/ftk-core'
 import routes from './routes'
 import store from './store'
 import './App.css'
@@ -17,9 +16,9 @@ const swidget: ISwidget = (): JSX.Element => {
   return (
     <App name="My-App" init={init} config={config} >
       <Provider store={store}>
-        <TranslationProvider translations={TranslationsI18n}>
+        <Suspense fallback="loading">
           <Route />
-        </TranslationProvider>
+        </Suspense>
       </Provider>
     </App>
   );

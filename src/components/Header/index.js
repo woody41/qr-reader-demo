@@ -14,6 +14,7 @@ import AccountCircle from '@material-ui/icons/AccountCircle';
 import MailIcon from '@material-ui/icons/Mail';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import MoreIcon from '@material-ui/icons/MoreVert';
+import LanguageSwitch from '../LanguageSwitch/LanguageSwitch'
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -83,14 +84,11 @@ const useStyles = makeStyles((theme: Theme) =>
 
 export default function Header() {
   const classes = useStyles();
- 
-  
-
   const isMenuOpen = false;
   const isMobileMenuOpen = Boolean(false);
 
   const handleProfileMenuOpen = (event: React.MouseEvent<HTMLElement>) => {
-   
+
   };
 
   const handleMobileMenuClose = () => {
@@ -101,7 +99,7 @@ export default function Header() {
   };
 
   const handleMobileMenuOpen = (event: React.MouseEvent<HTMLElement>) => {
-   
+
   };
 
   const menuId = 'primary-search-account-menu';
@@ -189,6 +187,7 @@ export default function Header() {
           </div>
           <div className={classes.grow} />
           <div className={classes.sectionDesktop}>
+            <LanguageSwitch />
             <IconButton aria-label="show 4 new mails" color="inherit">
               <Badge badgeContent={4} color="secondary">
                 <MailIcon />
