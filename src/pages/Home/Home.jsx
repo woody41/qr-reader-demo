@@ -40,7 +40,7 @@ function template() {
                         <LinearNav />
 
 
-                        <Paper elevation={0} square >Testing paper</Paper>
+                        <Paper elevation={0} square >{i18n.translateToString('TestingPaper')}</Paper>
                     </Grid>
                     <Grid item sm={12}>
                         <Footer />

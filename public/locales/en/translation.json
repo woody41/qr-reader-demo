@@ -11,5 +11,6 @@
   "HeadlineDemoContent": "Important Links",
   "ReadMore": "Read more",
   "BackToHome": "Back to home",
-  "FetchPosts": "Fetch posts"
+  "FetchPosts": "Fetch posts",
+  "TestingPaper": "Hi I am PAPER component! Test to translate me."
 }
