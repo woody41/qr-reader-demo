@@ -1,7 +1,7 @@
 import { IRouteConfig } from '@daimler/ftk-core'
 import withLayout from '../decorators/withLayout'
 import PostPage from './PostPage/PostPage'
-import Home from './Home/Home'
+import Home from '../pages/Home/Home'
 import QRreaderPage from './QRreaderPage'
 import GridPage from './GridPage'
 

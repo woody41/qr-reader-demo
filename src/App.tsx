@@ -15,7 +15,7 @@ function init(container: IDiContainer): void {
 
 const swidget: ISwidget = (): JSX.Element => {
   return (
-    <App name="My-App" init={init} config={config}>
+    <App name="My-App" init={init} config={config} >
       <Provider store={store}>
         <TranslationProvider translations={TranslationsI18n}>
           <Route />
