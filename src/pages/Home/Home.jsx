@@ -3,6 +3,7 @@ import Header from '../../components/Header'
 import Nav from '../../components/Nav'
 import Footer from '../../components/Footer'
 import LinearNav from '../../components/LinearNav'
+import { useI18n, useRouter } from '@daimler/ftk-core'
 import './Home.scss'
 
 import { Theme, createStyles, makeStyles } from '@material-ui/core/styles';
@@ -23,6 +24,7 @@ const useStyles = makeStyles((theme: Theme) =>
     },
   }),
 );
+/* const i18n = useI18n() */
 
 function template() {
     
@@ -40,7 +42,7 @@ function template() {
                         <LinearNav />
 
 
-                        <Paper elevation={0} square >{i18n.translateToString('TestingPaper')}</Paper>
+                        <Paper elevation={0} square >{/*i18n.translateToString('TestingPaper')*/}</Paper>
                     </Grid>
                     <Grid item sm={12}>
                         <Footer />
