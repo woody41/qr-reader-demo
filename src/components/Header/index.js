@@ -87,9 +87,7 @@ export default function Header() {
   const isMenuOpen = false;
   const isMobileMenuOpen = Boolean(false);
 
-  const handleProfileMenuOpen = (event: React.MouseEvent<HTMLElement>) => {
-
-  };
+  const handleProfileMenuOpen = (event: React.MouseEvent<HTMLElement>) => {};
 
   const handleMobileMenuClose = () => {
   };
