@@ -12,7 +12,7 @@ i18n
   .init({
     fallbackLng: 'en',
     backend: {
-      loadPath: 'http://localhost:3000/locales/{{lng}}/{{ns}}.json'
+      loadPath: '/locales/{{lng}}/{{ns}}.json'
     },
     debug: true,
     interpolation: {
