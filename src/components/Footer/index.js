@@ -10,19 +10,21 @@ class Footer extends Component {
 
   render() {
     return(
-      <Container maxWidth="lg" disableGutters>
-        <Grid container spacing={3}>
-            <Grid item md={3} sm="{6}">
-                <UserMenu/>
-            </Grid>
-            <Grid item md={3} sm="{6}">
+        <div class="bg-white">
+            <Container maxWidth="lg" disableGutters>
+            <Grid container spacing={3}>
+                <Grid item md={3} sm="{6}">
+                    <UserMenu/>
+                </Grid>
+                <Grid item md={3} sm="{6}">
 
+                </Grid>
+                <Grid item md={3} sm="{12}" alignItems="center">
+                    <CardFooter/>
+                </Grid>
             </Grid>
-            <Grid item md={3} sm="{12}" alignItems="center">
-                <CardFooter/>
-            </Grid>
-        </Grid>
-      </Container>
+          </Container>
+      </div>
     )
   }
 }

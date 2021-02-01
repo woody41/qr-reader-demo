@@ -98,9 +98,9 @@ export default function FullWidthGrid() {
                           <Paper className={classes.paper}>xs=6 sm=3</Paper>
                         </Grid>
                     </Grid>
+                </Grid>
                 <Grid item sm={12}>
                     <Footer />
-                </Grid>
                 </Grid>
             </Grid>
         </Container>
