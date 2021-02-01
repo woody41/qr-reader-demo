@@ -28,26 +28,24 @@ function template() {
     
     return (
         <div className="home">
-        <Container maxWidth="false" disableGutters>
-            <Grid container spacing={1}>
-                <Grid item sm={12}>
-                    <Header />
-                </Grid>
-                <Grid item md={2} sm={3}>
-                    <Nav />
-                </Grid>
-                <Grid item md={10} sm={9} >
-                    <LinearNav />
+            <Container maxWidth="false" disableGutters>
+                <Grid container spacing={1}>
+                    <Grid item sm={12}>
+                        <Header />
+                    </Grid>
+                    <Grid item md={2} sm={3}>
+                        <Nav />
+                    </Grid>
+                    <Grid item md={10} sm={9} >
+                        <LinearNav />
 
 
-                    <Paper elevation={0} square >Testing paper</Paper>
-                    <Paper />
-                    <Paper elevation={3} />
+                        <Paper elevation={0} square >Testing paper</Paper>
+                    </Grid>
+                    <Grid item sm={12}>
+                        <Footer />
+                    </Grid>
                 </Grid>
-                <Grid item sm={12}>
-                    <Footer />
-                </Grid>
-            </Grid>
             </Container>
         </div>
     )

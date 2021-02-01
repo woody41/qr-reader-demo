@@ -32,17 +32,23 @@ export default function VerticalTabs() {
           </ListItemIcon>
           <Typography variant="inherit">Home</Typography>
         </MenuItem>
-        <MenuItem>
+        <MenuItem onClick={() => router.navigate(router.linkTo('qr-reader'))}>
           <ListItemIcon>
             <PriorityHighIcon fontSize="small" />
           </ListItemIcon>
           <Typography variant="inherit">QR Reader test</Typography>
         </MenuItem>
-        <MenuItem>
+        <MenuItem onClick={() => router.navigate(router.linkTo('grid'))}>
           <ListItemIcon>
             <DraftsIcon fontSize="small" />
           </ListItemIcon>
           <Typography variant="inherit">GRID test</Typography>
+        </MenuItem>
+        <MenuItem onClick={() => router.navigate(router.linkTo('posts'))}>
+          <ListItemIcon>
+            <DraftsIcon fontSize="small" />
+          </ListItemIcon>
+          <Typography variant="inherit">Posts</Typography>
         </MenuItem>
       </MenuList>
         

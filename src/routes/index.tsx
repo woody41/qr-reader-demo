@@ -2,8 +2,8 @@ import { IRouteConfig } from '@daimler/ftk-core'
 import withLayout from '../decorators/withLayout'
 import PostPage from './PostPage/PostPage'
 import Home from '../pages/Home/Home'
-import QRreaderPage from './QRreaderPage'
-import GridPage from './GridPage'
+import GridPage from '../pages/GridPage'
+import QRreaderPage from '../pages/QRreaderPage'
 
 const LayoutPostPage = withLayout(PostPage)
 
@@ -16,8 +16,8 @@ const routes: IRouteConfig[] = [
   },
   {
     component: GridPage,
-    name: 'qr-reader',
-    pattern: '/qr-reader',
+    name: 'grid',
+    pattern: '/grid',
   },
   {
     component: QRreaderPage,

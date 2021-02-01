@@ -1,10 +1,10 @@
 import React    from "react";
-import template from "./Nav.jsx";
+import template from "./QRreaderPage.jsx";
 
-class Nav extends React.Component {
+class QRreaderPage extends React.Component {
   render() {
     return template.call(this);
   }
 }
 
-export default Nav;
+export default QRreaderPage;
