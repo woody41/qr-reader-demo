@@ -12,5 +12,10 @@
   "ReadMore": "Mehr erfahren",
   "BackToHome": "Zurück zum Start",
   "FetchPosts": "Beiträge holen",
-  "TestingPaper": "Hallo ich bin PAPIER komponente! Test, um mich zu übersetzen."
+  "TestingPaper": "Hallo ich bin PAPIER komponente! Test, um mich zu übersetzen.",
+  "AC1": "Ich bin akordion 1",
+  "AC1_CONTENT": "Nun, es gibt wirklich noch nichts.",
+  "AC2": "Klick mich",
+  "AC2_CONTENT": "Sprint 2 kommt!",
+  "AC3": "Ich bin behindert"
 }

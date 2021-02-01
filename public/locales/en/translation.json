@@ -12,5 +12,10 @@
   "ReadMore": "Read more",
   "BackToHome": "Back to home",
   "FetchPosts": "Fetch posts",
-  "TestingPaper": "Hi I am PAPER component! Test to translate me."
+  "TestingPaper": "Hi I am PAPER component! Test to translate me.",
+  "AC1": "I am accordion 1",
+  "AC1_CONTENT": "Well there is really nothing yet.",
+  "AC2": "Click me",
+  "AC2_CONTENT": "Sprint 2 is comming!",
+  "AC3": "I am disabled"
 }

@@ -50,6 +50,12 @@ export default function VerticalTabs() {
           </ListItemIcon>
           <Typography variant="inherit">Posts</Typography>
         </MenuItem>
+        <MenuItem onClick={() => router.navigate(router.linkTo('forms'))}>
+          <ListItemIcon>
+            <DraftsIcon fontSize="small" />
+          </ListItemIcon>
+          <Typography variant="inherit">Forms</Typography>
+        </MenuItem>
       </MenuList>
         
     </div>

@@ -2,6 +2,7 @@ import { IRouteConfig } from '@daimler/ftk-core'
 import withLayout from '../decorators/withLayout'
 import PostPage from './PostPage/PostPage'
 import Home from '../pages/Home/Home'
+import Forms from '../pages/Forms/Forms'
 import GridPage from '../pages/GridPage'
 import QRreaderPage from '../pages/QRreaderPage'
 
@@ -28,6 +29,11 @@ const routes: IRouteConfig[] = [
     component: LayoutPostPage,
     name: 'posts',
     pattern: '/posts',
+  },
+  {
+    component: Forms,
+    name: 'forms',
+    pattern: '/forms',
   },
 ]
 
